@@ -264,7 +264,7 @@ h6,
         url(../img/bg-circle.png),
         url(../img/bg-triangle.png),
         url(../img/bg-bottom.png),
-        linear-gradient(to bottom right, var(#019CCB), var(#E72A6A));
+        linear-gradient(to bottom right, var(#019CCB), var(#ed8dad));
     background-position:
         left 0px top 0px,
         right 0px top 50%,
