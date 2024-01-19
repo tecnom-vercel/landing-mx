@@ -260,8 +260,9 @@ h6,
 .hero-header {
     margin-bottom: 6rem;
     padding: 16rem 0 0 0;
-    background:
-        linear-gradient(to bottom right, var(#ffffff), var(#ffffff));
+    background: #ffffff;
+        
+    
     background-position:
         left 0px top 0px,
         right 0px top 50%,
