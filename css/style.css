@@ -207,7 +207,7 @@ h6,
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
-        color: var(--dark) !important;
+        color: var(#FFFFFF) !important;
     }
 
     .navbar-light .navbar-nav .nav-link::before {
