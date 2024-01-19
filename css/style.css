@@ -93,7 +93,7 @@ h6,
 
 .btn.btn-primary-gradient,
 .btn.btn-secondary-gradient::after {
-    background: linear-gradient(to bottom right, var( #ffffff), var( #ffffff));
+    background: linear-gradient(to bottom right, var( #1E84C4), var( #ffffff));
 }
 
 .btn.btn-secondary-gradient,
