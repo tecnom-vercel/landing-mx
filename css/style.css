@@ -156,6 +156,14 @@ h6,
     transition: .5s;
 }
 
+
+
+.contenedor
+{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
 .navbar-light .navbar-nav .nav-link::before {
     position: absolute;
     content: "";
