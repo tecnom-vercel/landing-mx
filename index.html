@@ -52,7 +52,7 @@
                 </button>
                 <div class="collapse contenedor navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <div class="py-2 px-4 ms-3 d-none d-lg-block">
+                        <div class="py-2 px-4 ms-3 d-none d-lg-block al-vert">
                             <img src="img/marca-tecnom-Negro.svg" alt="Logo" style="width: 50%; height: 50%;">
                         </div>
                         <a href="#inicio" class="nav-item nav-link active">Inicio</a>
@@ -133,9 +133,13 @@
 <div class="testimonial-item rounded p-4">
 <div class="d-flex align-items-center mb-4">
 <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/Logo_Stellantis_Neg_RGB.png" style="width: 75%; height: 75%;">
-
 </div>
 </div>
+<div class="testimonial-item rounded p-4">
+    <div class="d-flex align-items-center mb-4">
+    <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/logos-ford-horizontal-400-1.png" style="width: 75%; height: 75%;">
+    </div>
+    </div>
 <div class="testimonial-item rounded p-4">
 <div class="d-flex align-items-center mb-4">
 <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/logo (4).png" style="width: 75%; height: 75%;">
@@ -352,148 +356,56 @@
         <!-- Process Start -->
 
 
-                <!-- Contact Start -->
-                <div class="container-xxl py-5" id="contact">
-                    <div class="container py-5 px-lg-5">
-                        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                            <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
-                            <h1 class="mb-5">¿Te interesa mejorar tu gestión y aumentar tus ventas? ¡Hablemos! 😀</h1>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-lg-9">
-                                <div class="wow fadeInUp" data-wow-delay="0.3s">
-                                    <p class="text-center mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                                    <form>
-                                        <div class="row g-3">
-                                            <div class="col-md-6">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                                    <label for="name">Your Name</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-floating">
-                                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                                    <label for="email">Your Email</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-floating">
-                                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                                    <label for="subject">Subject</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-floating">
-                                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                                    <label for="message">Message</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 text-center">
-                                                <button class="btn btn-primary-gradient rounded-pill py-3 px-5" type="submit">Send Message</button>
+              <!-- Contact Start -->
+              <div class="container-xxl py-5" id="contact">
+                <div class="container py-5 px-lg-5">
+                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
+                        <h1 class="mb-5">¿Te interesa mejorar tu gestión y aumentar tus ventas? ¡Hablemos! 😀</h1>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9">
+                            <div class="wow fadeInUp" data-wow-delay="0.3s">
+                                <p class="text-center mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                                <form id="contactform" action="https://formsubmit.io/send/30d8d247-227a-479a-a6cd-04bab74a1b52" method="POST" class="needs-validation" novalidate>
+<input name="_redirect" type="hidden" id="Nombre" value="https://mx.tecnom.cloud/">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input name="Nombre" type="text" class="form-control" id="name" placeholder="Your Name">
+                                                <label for="name">Your Name</label>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating">
+                                                <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
+                                                <label for="email">Your Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject">
+                                                <label for="subject">Subject</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <textarea name="message" class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                                <label for="message">Message</label>
+                                            </div>
+                                        </div>
+                                            <input name="_formsubmit_id" type="text" style="display:none">
+                                        <div class="col-12 text-center">
+                                            <button class="btn btn-primary-gradient rounded-pill py-3 px-5" type="submit">Send Message</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Contact End -->
-                
-
-
-                <!-- Modal -->
-                <div class="modal fade" id="agendarDemoModal" tabindex="-1" aria-labelledby="agendarDemoModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centere modal-dialog-scrollable">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="agendarDemoModalLabel">Agendar una demo</h1>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                
-                            <div class="row justify-content-center">
-                                <div class="col text-center">
-                                    
-                                    <form id="contactform" action="https://formsubmit.io/send/0f42ae82-2815-4c9c-b8c6-e15a4bb0fae5" method="POST" class="needs-validation" novalidate>
-                                    <input name="_redirect" type="hidden" id="Nombre" value="https://ia.tecnom.cloud/graficas.html">
-                
-                                                <div class="row g-3">
-                                                    <div class="col-md-6">
-                                                        <div class="form-floating">
-                                                            <input name="Nombre" type="text" class="form-control" id="name" placeholder="Your Name" required>
-                                                            <label for="Nombre">Tu nombre</label>
-                                                            <div class="valid-feedback">
-                                                                Perfecto
-                                                            </div>
-                                                            <div class="invalid-feedback">Por favor escriba su nombre</div>
-                                                        </div>
-                                                    </div>
-                
-                                                <div class="col-6">
-                                                    <div class="form-floating">
-                                                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required>
-                                                        <label for="subject">Celular</label>
-                                                        <div class="valid-feedback"> Perfecto</div>
-                                                        <div class="invalid-feedback">Por favor escriba su celular</div>
-                
-                                                    </div>
-                                                </div>
-                                                    <div class="col-md-12">
-                                                        <div class="form-floating">
-                                                            <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required>
-                                                            <label for="email">Tu mail que más usas</label>
-                                                            <div class="valid-feedback">Perfecto</div>
-                                                            <div class="invalid-feedback">Por favor escriba su mail</div>
-                
-                                                        </div>
-                                                    </div>
-                                                   
-                                                 <!-- Modal -->
-
-                                                   
-                 
-                                                    
-                                                <!--
-                                                    <div class="col-12">
-                                                        <div class="form-floating">
-                                                            <input name="informacion1" type="text" class="form-control" id="informacion1" placeholder="Subject">
-                                                            <label for="informacion1">informacion1</label>
-                                                        </div>
-                                                    </div>
-                
-                                                    <div class="col-12">
-                                                        <div class="form-floating">
-                                                            <input name="informacion2" type="text" class="form-control" id="informacion2" placeholder="Subject">
-                                                            <label for="informacion2">informacion2</label>
-                                                        </div>
-                                                    </div>
-                                                -->
-                                                <input name="_formsubmit_id" type="text" style="display:none">
-                                                    <div class="col-12 text-center">
-                                                        <button class="btn btn-primary-gradient rounded-pill py-3 px-5" value="Submit" type="Enviar">Quiero una demo</button>
-                                                    </div>
-                                                </div>
-                                    </form>
-                                </div>
-                            </div>
-                
-                
-                          </div>
-                
-                        </div>
-                      </div>
-                </div>
-                
-
-
-
-
-
-
-
-
+            </div>
+            <!-- Contact End -->
     <!--
 
          About Start 
