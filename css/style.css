@@ -46,13 +46,13 @@ h6,
 .text-primary-gradient {
     background: linear-gradient(to bottom right, var(#000000), var(--secondary));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: #1E84C4;
 }
 
 .text-secondary-gradient {
     background: linear-gradient(to bottom right, var(#000000), var(--primary));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: #1E84C4;
 }
 
 .bg-primary-gradient {
