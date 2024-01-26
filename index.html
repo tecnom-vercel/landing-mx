@@ -366,7 +366,7 @@
               <div class="container-xxl py-5" id="contact">
                 <div class="container py-5 px-lg-5">
                     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                        <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
+                        <h5 class="text-primary-gradient fw-medium">Contactanos</h5>
                         <h1 class="mb-5">¿Te interesa mejorar tu gestión y aumentar tus ventas? ¡Hablemos! 😀</h1>
                     </div>
                     <div class="row justify-content-center">
@@ -380,25 +380,41 @@
                                         <div class="col-md-6">
                                             <div class="form-floating">
                                                 <input name="Nombre" type="text" class="form-control" id="name" placeholder="Your Name">
-                                                <label for="name">Your Name</label>
+                                                <label for="name">Nombre</label>
+                                                <div class="valid-feedback">
+                                                    Perfecto
+                                                </div>
+                                                <div class="invalid-feedback">Por favor escriba su nombre</div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-floating">
                                                 <input name="email" type="email" class="form-control" id="email" placeholder="Your Email">
-                                                <label for="email">Your Email</label>
+                                                <label for="email">Tu mail que más usas</label>
+                                                <div class="valid-feedback">
+                                                    Perfecto
+                                                </div>
+                                                <div class="invalid-feedback">Por favor escriba su mail</div>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
                                                 <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject">
-                                                <label for="subject">Subject</label>
+                                                <label for="subject">Consulta</label>
+                                                <div class="valid-feedback">
+                                                    Perfecto
+                                                </div>
+                                                <div class="invalid-feedback">Por favor escriba su consulta</div>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="form-floating">
                                                 <textarea name="message" class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                                <label for="message">Message</label>
+                                                <label for="message">Mensaje</label>
+                                                <div class="valid-feedback">
+                                                    Perfecto
+                                                </div>
+                                                <div class="invalid-feedback">Por favor escriba el mensaje</div>
                                             </div>
                                         </div>
                                             <input name="_formsubmit_id" type="text" style="display:none">
@@ -784,56 +800,7 @@
 
 
 
-<div class="modal fade" id="agendarDemoModal" tabindex="-1" aria-labelledby="agendarDemoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centere modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="agendarDemoModalLabel">Agendar una demo</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
 
-            <div class="row justify-content-center">
-                <div class="col text-center">
-                    
-                    <form id="contactform" action="https://formsubmit.io/send/30d8d247-227a-479a-a6cd-04bab74a1b52" method="POST" class="needs-validation" novalidate>
-                    <input name="_redirect" type="hidden" id="Nombre" value="https://ia.tecnom.cloud/graficas.html">
-
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input name="Nombre" type="text" class="form-control" id="name" placeholder="Your Name" required>
-                                            <label for="Nombre">Tu nombre</label>
-                                            <div class="valid-feedback">
-                                                Perfecto
-                                            </div>
-                                            <div class="invalid-feedback">Por favor escriba su nombre</div>
-                                        </div>
-                                    </div>
-
-                                <div class="col-6">
-                                    <div class="form-floating">
-                                        <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required>
-                                        <label for="subject">Celular</label>
-                                        <div class="valid-feedback"> Perfecto</div>
-                                        <div class="invalid-feedback">Por favor escriba su celular</div>
-
-                                    </div>
-                                </div>
-                                    <div class="col-md-12">
-                                        <div class="form-floating">
-                                            <input name="email" type="email" class="form-control" id="email" placeholder="Your Email" required>
-                                            <label for="email">Tu mail que más usas</label>
-                                            <div class="valid-feedback">Perfecto</div>
-                                            <div class="invalid-feedback">Por favor escriba su mail</div>
-
-                                        </div>
-                                    </div>
-                                   
-                                        
-                                   
- 
-                                    
                                 <!--
                                     <div class="col-12">
                                         <div class="form-floating">
@@ -886,6 +853,28 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Form Validation -->
+    <script>
+        // JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
 </body>
 
 </html>
