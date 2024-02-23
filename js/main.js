@@ -79,7 +79,6 @@
         autoplay: true,
         smartSpeed: 1000,
         loop: true,
-        center: true,
         dots: false,
         nav: false,
         
