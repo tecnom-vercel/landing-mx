@@ -529,11 +529,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 
-.owl-carousel .owl-stage {
+.owl-carousel.branding-carousel .owl-stage {
     display: flex;
     align-items: center;
   }
   
-  .owl-carousel .caption {
+  .owl-carousel.branding-carousel .caption {
     text-align: center;
-  }
+  }
+
+  
