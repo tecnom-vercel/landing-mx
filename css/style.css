@@ -561,9 +561,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     line-height: 30px;
 }
 
-/(1) owl-stage box/
 .owl-carousel .owl-stage { display: flex; }
-/(2) the direct div of each element in the owl carousel/
+
 .article-items { height: 100%; }
 
 .shadow-lg {
@@ -571,5 +570,5 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .h-95 {
-    height: 95% !important;
+    height: 95% !important;
 }
