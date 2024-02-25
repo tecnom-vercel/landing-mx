@@ -560,3 +560,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-size: 60px;
     line-height: 30px;
 }
+
+/(1) owl-stage box/
+.owl-carousel .owl-stage { display: flex; }
+/(2) the direct div of each element in the owl carousel/
+.article-items { height: 100%; }
+
+.shadow-lg {
+    box-shadow: 0 0rem 1rem rgba(0,0,0,0.125)!important;
+}
+
+.h-95 {
+    height: 95% !important;
+}
